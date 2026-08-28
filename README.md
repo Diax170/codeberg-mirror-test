@@ -7,7 +7,7 @@ This repo already works! See the [GitHub](https://github.com/Diax170/codeberg-mi
 
 # How to set up
 1. Generate an SSH key pair on your machine:
-```shell
+```sh
 mkdir /tmp/codeberg-key
 ssh-keygen -t ed25519 -f /tmp/codeberg-key/key -C github-actions
 ```
@@ -56,4 +56,8 @@ jobs:
           git remote add codeberg ssh://git@codeberg.org/OliMoli/codeberg-mirror-test
           git push codeberg --force
 ```
-10. Once you push the changes, they should automatically appear at the Codeberg mirror
+10. Once you push the changes, they should automatically appear in the Codeberg mirror.
+11. You can now remove the local SSH key pair:
+```sh
+rm -r /tmp/codeberg-key
+```
