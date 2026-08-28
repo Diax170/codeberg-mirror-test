@@ -3,6 +3,8 @@ Test of a GitHub -> Codeberg read-only mirror.
 
 This approach uses an SSH deploy key which, unlike API keys, doesn't expire.
 
+This repo already works! See the [GitHub](https://github.com/Diax170/codeberg-mirror-test) original repo and the [Codeberg](https://codeberg.org/OliMoli/codeberg-mirror-test) mirror.
+
 # How to set up
 1. Generate an SSH key pair on your machine:
 ```shell
