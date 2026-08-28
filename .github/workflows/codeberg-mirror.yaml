@@ -25,7 +25,7 @@ jobs:
           ssh-agent -a $SSH_AUTH_SOCK > /dev/null	
           ssh-add ~/.ssh/github_actions
 
-      - name: Build and deploy
+      - name: Push to Codeberg
         env:
           SSH_AUTH_SOCK: /tmp/ssh_agent.sock
         run: |
